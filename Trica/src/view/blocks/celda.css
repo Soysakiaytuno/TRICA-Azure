@@ -1,22 +1,22 @@
-.cell
-{
-    background-color: #f0f0f0;
-    border: 2px solid #333;
-    font-size: 3rem;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.trica-cell {
+  background-color: #0f3460;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
 }
-.cell:hover
-{
-    background-color: #e0e0e0;
+
+.trica-cell:hover {
+  background-color: #e94560;
+  transform: scale(1.05);
 }
-.cell__content
-{
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.trica-cell img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  pointer-events: none;
 }
