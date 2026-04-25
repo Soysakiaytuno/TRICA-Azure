@@ -1,0 +1,40 @@
+@import "./blocks/celda.css";
+@import "./blocks/matriz.css";
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1a1a2e;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trica-info {
+  margin-top: 20px;
+  min-height: 80px;
+}
+
+.player-turn {
+  color: #e94560;
+  font-weight: bold;
+}
+
+#btn-reset {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #e94560;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+#btn-reset:hover {
+  background-color: #d63d56;
+}

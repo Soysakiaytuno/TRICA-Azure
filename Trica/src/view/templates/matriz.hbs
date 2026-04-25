@@ -1,0 +1,31 @@
+<div class="trica-container">
+  <h1>TRICA-Azure 🎮</h1>
+
+  <div class="trica-board">
+    {{#each board}}
+      <!-- El atributo data-index nos ayuda a saber qué número de celda se clickeó -->
+      <div class="trica-cell" data-index="{{@index}}">
+        {{#if (eq this 'X')}}
+          <img src="{{../imgX}}" alt="X">
+        {{else if (eq this 'O')}}
+          <img src="{{../imgO}}" alt="O">
+        {{else}}
+          <img src="{{../imgEmpty}}" alt="Vacio">
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
+
+  <div class="trica-info">
+    {{#if winner}}
+      {{#if (eq winner 'Draw')}}
+        <h2 class="draw">¡Es un empate! 🤝</h2>
+      {{else}}
+        <h2 class="winner">¡El ganador es {{winner}}! 🎉</h2>
+      {{/if}}
+      <button id="btn-reset">Jugar de nuevo</button>
+    {{else}}
+      <h2>Turno del jugador: <span class="player-turn">{{currentPlayer}}</span></h2>
+    {{/if}}
+  </div>
+</div>
